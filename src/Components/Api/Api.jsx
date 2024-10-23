@@ -44,10 +44,11 @@ function Api() {
       <div className="suggestion">
         <h3>Top Search :</h3>
         <div className="suggestion-btn">
-        <button onClick={()=>setResult("Naruto")}>Naruto</button>
+       <button onClick={()=>setResult("Naruto")}>Naruto</button>
       <button onClick={()=>setResult("One punch man")}>one punch man</button>
       <button onClick={()=>setResult("Bleach")}>Bleach</button>
             </div>
+     
       </div>
       <div className="display-container">
       <div className="cards">
