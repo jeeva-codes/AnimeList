@@ -131,5 +131,10 @@
     margin-left: 0; 
     width: 20%;
 }
+.submit-btn{
+    width: 60%;
+    margin: 30px 20% 30px 20%;
+
+}
 }
 
