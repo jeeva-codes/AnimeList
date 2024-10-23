@@ -31,7 +31,7 @@ const About = () => {
         <div className="contact-links-icons">
               <ul style={{listStyleType:'none'}} className='icons'>
                 <li><a href='https://github.com/jeeva-codes' target="_blank"> <IoLogoGithub className='icon' /></a></li>
-                <li><a href='https://in.linkedin.com/in/jeeva-code-bb3334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target="_blank">  <FaLinkedin  className='icon'/></a></li>
+                <li><a href='https://www.linkedin.com/in/jeeva-m-b9b373334' target="_blank">  <FaLinkedin  className='icon'/></a></li>
                 <li><a href='mailto: jeevacode2@gmail.com' target="_blank">  <BiLogoGmail  className='icon'/></a></li>
                 <li><a href='https://www.instagram.com/_jeeva_madjack_?igsh=MTJ5d3phMjI3Zjg0OQ==' target="_blank">  <FaInstagram  className='icon'/></a></li>
               </ul>
