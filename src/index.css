@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --fontsize-1:.7em;
+    --fontsize-2:1.1em;
+    --color:rgb(61, 61, 61);
+    --letter-space:0.6px;
+    --font-weight-1:400;
+    --font-weight-2:600;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.api-container {
+    font-family: 'Montserrat',sans-serif;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-transform: capitalize;
+    letter-spacing: var(--letter-space);
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 70%;
+    margin:0 15% 0 15%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+ .suggestion{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    
+} 
+.suggestion h3{
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.suggestion button{
+    display: block;
+    width: 30%;
+    margin:0 auto 5px auto;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat',sans-serif;
+    background-color: #e6e5e5;
+} 
+.display-container {
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards p{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.card {
+    background-color: #fafafa;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    margin:10px auto 10px auto;
+    padding: 15px;
+    width: calc(30% - 10px); /* Four cards per row with some margin */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+#anime-title{
+    margin-top: 5px;
+    width: 100%;
+    color: var(--color);
+   text-align: center;
+   font-size: var(--fontsize-2);
+   font-family:'Fredoka',sans-serif ;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    margin-top: 10px;
+    width: 100%;
+    height: 230px;
+    border-radius: 4px;
+}
+
+.card-main {
+    margin-top: 10px;
+}
+.jap-name{
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+}
+.jap-name h2,h3{
+    width: 50%;
+    font-size: var(--fontsize-1);
+}
+
+.ani-type{
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+
+}
+.ani-type h2,h3{
+    width: 50%;
+    font-size: var(--fontsize-1);
+
+}
+.ani-episodes{
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+}
+.ani-episodes h2,h3{
+    width: 50%;
+    font-size: var(--fontsize-1);
+}
+.card-genre{
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+
+}
+.card-genre h2,ul{
+    width: 50%;
+}
+.card-genre ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-genre ul li{
+    font-size: 0.8em;
+    font-family: 'Fredoka',sans-serif ;
+    margin-right: 5px;
+    font-weight: 600;
+}
+.ratings{
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+
+}
+.ratings h2,h3{
+    width: 50%;
+    font-size: var(--fontsize-1);
+
+}
+.anime-score{
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+}
+.anime-score h2,h3{
+    width: 50%;
+    font-size: var(--fontsize-1);
+}
+
+.ani-link {
+    width: 100%;
+   
+
+}
+.ani-link button{
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    background-color: #0056b3;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    transition: 0.2s linear;
+}
+.ani-link button a{
+    text-decoration: none;
+    color: #fff;
+}
+.ani-link button:hover{
+    transform: scale(1.2,1.2);
+}
+
+
+
+
+/* resposive design */
+@media (max-width:800px){
+ .card{
+    width: calc(40% - 10px);
+ }
+ .suggestion button{
+    width: 50%;
+ }   
+}
+@media (max-width:600px){
+.card{
+    width: calc(80% - 10px);
+ } 
+.input-container input  {
+    font-size: 0.7em;
+}
+}
+@media (min-width:1120px){
+.suggestion{
+        display: flex;
+        justify-content: center;
+}
+.suggestion button{
+        margin: 0 5px 5px 5px;
+}
+}
