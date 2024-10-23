@@ -47,16 +47,28 @@
     margin-bottom: 5px;
     text-align: center;
 }
-.suggestion button{
-    display: block;
-    width: 30%;
-    margin:0 auto 5px auto;
-    padding: 5px;
-    border-radius: 10px;
+.suggestion-btn{
+    width: 70%;
+    max-height: 60px;
+    display: flex;
+    overflow-x: auto;
+    margin: auto;
+}
+.suggestion-btn::-webkit-scrollbar{
+    width: 0;
+}
+.suggestion-btn button{
+  min-width: 150px;
+    height: 40px;
     border: none;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 20px;
+    font-weight: 500;
     font-family: 'Montserrat',sans-serif;
     background-color: #e6e5e5;
-} 
+    border-radius: 10px;
+}
 .display-container {
     width: 100%;
 }
@@ -217,14 +229,5 @@
  } 
 .input-container input  {
     font-size: 0.7em;
-}
-}
-@media (min-width:1120px){
-.suggestion{
-        display: flex;
-        justify-content: center;
-}
-.suggestion button{
-        margin: 0 5px 5px 5px;
 }
 }
